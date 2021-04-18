@@ -49,8 +49,5 @@ func main() {
 		if !quietMode {
 			fmt.Println(line)
 		}
-		if fn != "" {
-			fmt.Fprintf(f, "%s\n", line)
-		}
 	}
 }
