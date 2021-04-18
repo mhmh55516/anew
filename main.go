@@ -17,7 +17,6 @@ func main() {
 
 	lines := make(map[string]bool)
 
-	var f io.WriteCloser
 
 	if fn != "" {
 		// read the whole file into a map if it exists
