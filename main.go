@@ -32,12 +32,6 @@ func main() {
 		}
 
 		// re-open the file for appending new stuff
-		f, err = os.OpenFile(fn, os.O_APPEND|os.O_WRONLY|os.O_CREATE, 0644)
-		if err != nil {
-			fmt.Fprintf(os.Stderr, "failed to open file for writing: %s\n", err)
-			return
-		}
-		defer f.Close()
 	}
 
 	// read the lines, append and output them if they're new
